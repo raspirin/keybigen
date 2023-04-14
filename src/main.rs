@@ -28,7 +28,7 @@ fn main() {
             .collect::<Vec<KeyBinding>>(),
     };
 
-    println!("keybindings:");
+    println!("key_bindings:");
     for i in keybindings {
         println!("{i}")
     }
