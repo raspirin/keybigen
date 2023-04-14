@@ -57,7 +57,7 @@ impl KeyBinding {
 
 impl Display for KeyBinding {
     fn fmt(&self, f: &mut Formatter<'_>) -> std::fmt::Result {
-        let w = "- {".to_string();
+        let w = "  - {".to_string();
         let mut w = format!("{} key: {},", w, self.key);
         if let Some(mods) = self.mods_string() {
             w = format!("{} mods: {}", w, mods);
